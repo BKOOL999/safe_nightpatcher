@@ -20,7 +20,7 @@ Safe NightPatcher enables night mode from Splatfest on any Splatoon VS map.
 
 ##Known issues
 
-+ Hammerhead Bridge causes bad desync when played online.  You aren't restricted from using it, but it's not recommended.  The program will confirm if you want to poke the map if you check its checkbox.
++ Hammerhead Bridge causes bad desync issues when played online.  You aren't restricted from using it, but it's not recommended.  The program will confirm if you want to poke the map if you check its checkbox.
   
 ##Credits
 
