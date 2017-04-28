@@ -16,13 +16,13 @@ Safe NightPatcher enables night mode from Splatfest on any Splatoon VS map.
 
 ##Usage
 
-- Connect, choose the maps you want set to night mode, and click poke.
++ Connect, choose the maps you want set to night mode, and click poke.
 
 ##Known issues
 
-Hammerhead Bridge causes bad desync when played online.  You aren't restricted from using it, but it's not recommended.  The program will confirm if you want to poke the map if you check its checkbox.
++ Hammerhead Bridge causes bad desync when played online.  You aren't restricted from using it, but it's not recommended.  The program will confirm if you want to poke the map if you check its checkbox.
   
 ##Credits
 
-amibu for the geckomaptester source, Bkool999 for putting everything together and coding the program, OatmealDome for finding the offsets, and Yahya for small bits of code taken from Octoslots.
++ amibu for the geckomaptester source, Bkool999 for putting everything together and coding the program, OatmealDome for finding the offsets, and Yahya for small bits of code taken from Octoslots.
 
