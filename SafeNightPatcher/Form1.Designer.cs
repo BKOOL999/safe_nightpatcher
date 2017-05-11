@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.IPBox = new System.Windows.Forms.TextBox();
             this.buttonConnect = new System.Windows.Forms.Button();
@@ -54,6 +55,8 @@
             this.buttonPoke = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.vsMusicFix = new System.Windows.Forms.CheckBox();
+            this.mapCheckerTimer = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +122,7 @@
             this.groupBox2.Controls.Add(this.anchovGamesBox);
             this.groupBox2.Controls.Add(this.buttonPoke);
             this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(7, 65);
+            this.groupBox2.Location = new System.Drawing.Point(7, 81);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(298, 238);
             this.groupBox2.TabIndex = 5;
@@ -312,17 +315,34 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(71, 306);
+            this.label2.Location = new System.Drawing.Point(71, 322);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "OatmealDome, Bkool999, Yahya14";
             // 
+            // vsMusicFix
+            // 
+            this.vsMusicFix.AutoSize = true;
+            this.vsMusicFix.Location = new System.Drawing.Point(22, 64);
+            this.vsMusicFix.Name = "vsMusicFix";
+            this.vsMusicFix.Size = new System.Drawing.Size(83, 17);
+            this.vsMusicFix.TabIndex = 7;
+            this.vsMusicFix.Text = "Fix vs music";
+            this.vsMusicFix.UseVisualStyleBackColor = true;
+            this.vsMusicFix.CheckedChanged += new System.EventHandler(this.vsMusicFix_CheckedChanged);
+            // 
+            // mapCheckerTimer
+            // 
+            this.mapCheckerTimer.Interval = 50;
+            this.mapCheckerTimer.Tick += new System.EventHandler(this.mapCheckerTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 326);
+            this.ClientSize = new System.Drawing.Size(312, 340);
+            this.Controls.Add(this.vsMusicFix);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -369,6 +389,8 @@
         private System.Windows.Forms.CheckBox anchovGamesBox;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button toggleAll;
+        private System.Windows.Forms.CheckBox vsMusicFix;
+        private System.Windows.Forms.Timer mapCheckerTimer;
     }
 }
 
