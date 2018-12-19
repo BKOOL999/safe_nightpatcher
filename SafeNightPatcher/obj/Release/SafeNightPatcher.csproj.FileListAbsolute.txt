@@ -1,0 +1,8 @@
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\bin\Release\SafeNightPatcher.exe.config
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\bin\Release\SafeNightPatcher.exe
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\bin\Release\SafeNightPatcher.pdb
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\obj\Release\SafeNightPatcher.Form1.resources
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\obj\Release\SafeNightPatcher.Properties.Resources.resources
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\obj\Release\SafeNightPatcher.csproj.GenerateResource.Cache
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\obj\Release\SafeNightPatcher.exe
+C:\Users\Yannick\Documents\safe_nightpatcher\SafeNightPatcher\obj\Release\SafeNightPatcher.pdb

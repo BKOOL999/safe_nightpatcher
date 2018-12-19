@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace SafeNightPatcher
 {
@@ -84,12 +85,37 @@ namespace SafeNightPatcher
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (groupBox4.Enabled)
+            {
+                Configuration.currentConfig.lastIp = IPBox.Text;
+                Configuration.currentConfig.AutoPoke = checkBox1.Checked;
+                Configuration.Save();
+                if (checkBox1.Checked == true)
+                {
+                    mapCheckerTimer.Start();
+                    btnMusicPoke.Enabled = false;
+                    buttonPoke.Enabled = false;
+                }
+                else
+                {
+                    mapCheckerTimer.Stop();
+                    btnMusicPoke.Enabled = true;
+                    buttonPoke.Enabled = true;
+                }
+            }
         }
 
         private void btnMusicPoke_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                trackRevert(cmbMusic.SelectedIndex);
+                DialogResult Dialog = MessageBox.Show("Safe NightPatcher", "Music poked!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            catch
+            {
+                DialogResult Dialog = MessageBox.Show("Safe NightPatcher", "Something went wrong while poking the music", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
         }
 
         private void buttonPoke_Click(object sender, EventArgs e)
@@ -100,7 +126,8 @@ namespace SafeNightPatcher
 
         private void CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox1.Checked)
+                pokeMaps();
         }
 
         private void toggleAll_Click(object sender, EventArgs e)
@@ -153,7 +180,23 @@ namespace SafeNightPatcher
 
         private void hammerheadBridgeOrBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (hammerheadBridgeOrBox.Checked == true)
+            {
+                DialogResult dialogResult = MessageBox.Show("Hammerhead Bridge is known to cause serious desync issues.  It is recommended to only use night mode for this map in Private Battle with each player synced up.  Are you sure you want to enable night mode for this map?", "WARNING", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    if (hammerheadBridgeBox.Checked)
+                        hammerheadBridgeBox.Checked = false;
+                    ObjectTimer.Stop();
+                    hammerheadBridgeOrBox.Checked = true;
+                    if (checkBox1.Checked)
+                        buttonPoke_Click(sender, e);
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    hammerheadBridgeOrBox.Checked = false;
+                }
+            }
         }
 
         private void hammerheadBridgeBox_CheckedChanged(object sender, EventArgs e)

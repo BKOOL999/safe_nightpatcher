@@ -95,6 +95,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Automatically poke stages and music";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -116,6 +117,7 @@
             this.btnMusicPoke.TabIndex = 9;
             this.btnMusicPoke.Text = "Poke music";
             this.btnMusicPoke.UseVisualStyleBackColor = true;
+            this.btnMusicPoke.Click += new System.EventHandler(this.btnMusicPoke_Click);
             // 
             // cmbMusic
             // 
@@ -192,6 +194,7 @@
             this.hammerheadBridgeBox.TabIndex = 45;
             this.hammerheadBridgeBox.Text = "Hammerhead Bridge";
             this.hammerheadBridgeBox.UseVisualStyleBackColor = true;
+            this.hammerheadBridgeBox.CheckedChanged += new System.EventHandler(this.hammerheadBridgeBox_CheckedChanged);
             // 
             // toggleAll
             // 
@@ -201,6 +204,7 @@
             this.toggleAll.TabIndex = 44;
             this.toggleAll.Text = "Toggle all checkboxes";
             this.toggleAll.UseVisualStyleBackColor = true;
+            this.toggleAll.Click += new System.EventHandler(this.toggleAll_Click);
             // 
             // walleyeWarehouseBox
             // 
@@ -211,6 +215,7 @@
             this.walleyeWarehouseBox.TabIndex = 43;
             this.walleyeWarehouseBox.Text = "Walleye Warehouse";
             this.walleyeWarehouseBox.UseVisualStyleBackColor = true;
+            this.walleyeWarehouseBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // urchinUnderpassBox
             // 
@@ -221,6 +226,7 @@
             this.urchinUnderpassBox.TabIndex = 42;
             this.urchinUnderpassBox.Text = "Urchin Underpass";
             this.urchinUnderpassBox.UseVisualStyleBackColor = true;
+            this.urchinUnderpassBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // saltsprayRigBox
             // 
@@ -231,6 +237,7 @@
             this.saltsprayRigBox.TabIndex = 41;
             this.saltsprayRigBox.Text = "Saltspray Rig";
             this.saltsprayRigBox.UseVisualStyleBackColor = true;
+            this.saltsprayRigBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // portMackerelBox
             // 
@@ -241,6 +248,7 @@
             this.portMackerelBox.TabIndex = 40;
             this.portMackerelBox.Text = "Port Mackerel";
             this.portMackerelBox.UseVisualStyleBackColor = true;
+            this.portMackerelBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // piranhaPitBox
             // 
@@ -251,6 +259,7 @@
             this.piranhaPitBox.TabIndex = 39;
             this.piranhaPitBox.Text = "Piranha Pit";
             this.piranhaPitBox.UseVisualStyleBackColor = true;
+            this.piranhaPitBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // museumDalfonsinoBox
             // 
@@ -261,6 +270,7 @@
             this.museumDalfonsinoBox.TabIndex = 38;
             this.museumDalfonsinoBox.Text = "Museum d\'Alfonsino";
             this.museumDalfonsinoBox.UseVisualStyleBackColor = true;
+            this.museumDalfonsinoBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // morayTowersBox
             // 
@@ -271,6 +281,7 @@
             this.morayTowersBox.TabIndex = 37;
             this.morayTowersBox.Text = "Moray Towers";
             this.morayTowersBox.UseVisualStyleBackColor = true;
+            this.morayTowersBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // mahimahiResortBox
             // 
@@ -281,6 +292,7 @@
             this.mahimahiResortBox.TabIndex = 36;
             this.mahimahiResortBox.Text = "Mahi-Mahi Resort";
             this.mahimahiResortBox.UseVisualStyleBackColor = true;
+            this.mahimahiResortBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // kelpDomeBox
             // 
@@ -291,6 +303,7 @@
             this.kelpDomeBox.TabIndex = 35;
             this.kelpDomeBox.Text = "Kelp Dome";
             this.kelpDomeBox.UseVisualStyleBackColor = true;
+            this.kelpDomeBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // hammerheadBridgeOrBox
             // 
@@ -301,6 +314,7 @@
             this.hammerheadBridgeOrBox.TabIndex = 34;
             this.hammerheadBridgeOrBox.Text = "Hammerhead Bridge (Unsafe version)";
             this.hammerheadBridgeOrBox.UseVisualStyleBackColor = true;
+            this.hammerheadBridgeOrBox.CheckedChanged += new System.EventHandler(this.hammerheadBridgeOrBox_CheckedChanged);
             // 
             // flounderHeightsBox
             // 
@@ -311,6 +325,7 @@
             this.flounderHeightsBox.TabIndex = 33;
             this.flounderHeightsBox.Text = "Flounder Heights";
             this.flounderHeightsBox.UseVisualStyleBackColor = true;
+            this.flounderHeightsBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // campTriggerfishBox
             // 
@@ -321,6 +336,7 @@
             this.campTriggerfishBox.TabIndex = 32;
             this.campTriggerfishBox.Text = "Camp Triggerfish";
             this.campTriggerfishBox.UseVisualStyleBackColor = true;
+            this.campTriggerfishBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // bluefinDepotBox
             // 
@@ -331,6 +347,7 @@
             this.bluefinDepotBox.TabIndex = 31;
             this.bluefinDepotBox.Text = "Bluefin Depot";
             this.bluefinDepotBox.UseVisualStyleBackColor = true;
+            this.bluefinDepotBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // blackBellySkateparkBox
             // 
@@ -341,6 +358,7 @@
             this.blackBellySkateparkBox.TabIndex = 30;
             this.blackBellySkateparkBox.Text = "Blackbelly Skatepark";
             this.blackBellySkateparkBox.UseVisualStyleBackColor = true;
+            this.blackBellySkateparkBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // arowanaMallBox
             // 
@@ -351,6 +369,7 @@
             this.arowanaMallBox.TabIndex = 29;
             this.arowanaMallBox.Text = "Arowana Mall";
             this.arowanaMallBox.UseVisualStyleBackColor = true;
+            this.arowanaMallBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // anchovGamesBox
             // 
@@ -361,6 +380,7 @@
             this.anchovGamesBox.TabIndex = 28;
             this.anchovGamesBox.Text = "Ancho-V Games";
             this.anchovGamesBox.UseVisualStyleBackColor = true;
+            this.anchovGamesBox.CheckedChanged += new System.EventHandler(this.CheckedChanged);
             // 
             // buttonPoke
             // 
@@ -370,6 +390,7 @@
             this.buttonPoke.TabIndex = 11;
             this.buttonPoke.Text = "Poke";
             this.buttonPoke.UseVisualStyleBackColor = true;
+            this.buttonPoke.Click += new System.EventHandler(this.buttonPoke_Click);
             // 
             // groupBox1
             // 
@@ -392,6 +413,7 @@
             this.buttonDisconn.TabIndex = 2;
             this.buttonDisconn.Text = "Disconnect";
             this.buttonDisconn.UseVisualStyleBackColor = true;
+            this.buttonDisconn.Click += new System.EventHandler(this.buttonDisconn_Click);
             // 
             // buttonConnect
             // 
@@ -401,6 +423,7 @@
             this.buttonConnect.TabIndex = 1;
             this.buttonConnect.Text = "Connect to Gecko";
             this.buttonConnect.UseVisualStyleBackColor = true;
+            this.buttonConnect.Click += new System.EventHandler(this.buttonConnect_Click);
             // 
             // IPBox
             // 
@@ -412,6 +435,7 @@
             // ObjectTimer
             // 
             this.ObjectTimer.Interval = 3000;
+            this.ObjectTimer.Tick += new System.EventHandler(this.ObjectTimer_Tick);
             // 
             // Form1
             // 
