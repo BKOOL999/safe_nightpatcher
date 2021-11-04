@@ -8,18 +8,17 @@ namespace SafeNightPatcher
     public class Configuration
     {
         public String lastIp;
-        public Boolean AutoPoke;
 
         private static XmlSerializer serializer = new XmlSerializer(typeof(Configuration));
         public static Configuration currentConfig;
-
+    
         public static void Load()
         {
             if (!File.Exists("Nightpatcherconfig.xml"))
             {
                 currentConfig = new Configuration();
                 currentConfig.lastIp = "";
-                currentConfig.AutoPoke = false;
+
                 Save();
             }
             else
